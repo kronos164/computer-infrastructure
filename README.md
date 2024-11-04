@@ -5,7 +5,7 @@ Repository for ATU module assessment
 
 ## Get Started
 
-The project was writen in a Jupiter notebook and you can visualize it on the file `penguins.ipynb` in this repository.
+!Under construction!
 
 ## Author
 
