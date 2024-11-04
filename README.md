@@ -3,10 +3,6 @@
 ***
 Repository for ATU module assessment 
 
-## About This Project
-
-This project is centered on the analysis of the [Palmer Penguins dataset](https://allisonhorst.github.io/palmerpenguins/), which provides a rich and detailed compilation of size measurements and species information for three penguin species collected from the Palmer Archipelago in Antarctica. The goal of this project is to explore and analyze these data to uncover patterns and insights related to penguins. The analytical approach includes visualization, and statistical modeling. This project serves as a module assessment, demonstrating the application of data science techniques in a real-world context. Through this analysis, I aim to provide valuable insights that could contribute to the understanding this dataset.
-
 ## Get Started
 
 The project was writen in a Jupiter notebook and you can visualize it on the file `penguins.ipynb` in this repository.
