@@ -1,24 +1,29 @@
 name: Get Weather
 
 on:
-    schedule:
-        - cron: '0 10 * * *'
-    workflow_dispatch:
+  schedule:
+    - cron: '0 10 * * *' # Runs daily at 10:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write # Allows the workflow to push changes to the repository
 
 jobs:
-    run-weather-script:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout repository
-              uses: actions/checkout@v4
+  run-weather-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-            - name: Run weather script
-              run: ./weather.sh
+      - name: Run weather script
+        run: ./weather.sh
 
-            - name: Commit and push changes
-              run: |
-                git config --global user.name 'github-actions'
-                git config --global user.email 'github-actions@github.com'
-                git add .
-                git commit -m 'Scheduled weather update data'
-                git push
+      - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add .
+          git commit -m 'Scheduled weather update data'
+          git push
