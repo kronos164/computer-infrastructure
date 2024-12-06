@@ -1,7 +1,7 @@
 #! /bin/bash
 
 echo "Downloading weather data"
-mkdir ../data/weather
+mkdir -p ../data/weather
 curl -o data/weather/`date +"%Y%m%d_%H%M%S_athenry.json"` https://prodapi.metweb.ie/observations/athenry/today
 
 echo "Download complete"
