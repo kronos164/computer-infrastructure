@@ -8,7 +8,7 @@ echo "Download complete"
 # Keep only the last 10 JSON files in the directory if there are 11 or more
 echo "Cleaning up old JSON files"
 if [ $(ls -1 ./data/weather/*.json 2>/dev/null | wc -l) -ge 11 ]; then
-    ls -tr ./data/weather/*.json | grep -v '/$' | tail -n +11 | xargs -d '\n' rm -- 2>/dev/null
+    ls -t ./data/weather/*.json | grep -v '/$' | tail -n +11 | xargs -d '\n' rm -- 2>/dev/null
 fi
 
 echo "Old JSON files removed"
