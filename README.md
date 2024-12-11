@@ -59,6 +59,8 @@ The notebook maintains current data through:
 * Data preservation (up to 10 instances, but it can be changed for more on the code)
 * Continuous data validation
 
+Note: The data presevation can be changed to a historical one in case you decide to keep all the files and/or timestamps. It is only necessary to delete this feature on the `weather.sh` script
+
 ### Future Enhancements
 
 * Interactive visualizations

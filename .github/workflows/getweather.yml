@@ -1,4 +1,8 @@
-name: Get Weather
+name: Get Weather from Met Éireann
+
+# This workflow is triggered daily at 20:00 UTC and can also be run manually using the "Run workflow" button.
+# The workflow runs on the latest version of the Ubuntu operating system.
+# The workflow checks out the repository, runs a script to get the weather data from Met Éireann, and commits and pushes the changes to the repository.
 
 on:
   schedule:
@@ -12,13 +16,13 @@ jobs:
   run-weather-script:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout repository # Check out the repository so the script can access it
         uses: actions/checkout@v4
 
-      - name: Run weather script
+      - name: Run weather script # Run the weather script
         run: ./weather.sh
 
-      - name: Commit and push changes
+      - name: Commit and push changes # Commit and push the changes to the repository
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
