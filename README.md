@@ -15,9 +15,9 @@ This project features an automated daily weather data analysis for Athenry using
 1. Clone the repository
 2. Download necessary requirements
 3. Open the Jupyter notebook
-4. Manually run the Github Action "Get Weather" (optional in case the newerst weather data is needed)
+4. Manually run the Github Action `Get Weather from Met Éireann` (optional in case the newerst weather data is needed)
 5. Run all cells to see the latest weather analysis
-6. Data updates automatically every 24 hours (20:00 UTC, which can be changed on the git workflow)
+6. Data updates automatically every 24 hours (20:00 UTC, which can be changed on the git workflow `.yml` file)
 
 ### Project Overview
 
