@@ -17,7 +17,7 @@ This project features an automated daily weather data analysis for Athenry using
 3. Open the Jupyter notebook
 4. Manually run the Github Action "Get Weather" (optional in case the newerst weather data is needed)
 5. Run all cells to see the latest weather analysis
-6. Data updates automatically every 24 hours
+6. Data updates automatically every 24 hours (20:00 UTC, which can be changed on the git workflow)
 
 ### Project Overview
 
