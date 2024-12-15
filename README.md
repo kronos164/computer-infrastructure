@@ -1,12 +1,10 @@
 # Computer Infrastructure
 
-***
-
 Repository for ATU module assessment
 
 ***
 
-## Weather Data Analysis - Athenry
+# **Weather Data Analysis - Athenry**
 
 This project features an automated daily weather data analysis for Athenry using a Jupyter notebook. The data is automatically updated through GitHub Actions, ensuring fresh meteorological insights every day.
 
@@ -16,6 +14,8 @@ This repository contains:
 - **Jupyter Notebook**: Processes and analyzes the collected weather data, providing insights into meteorological trends for Athenry.
 
 The automation is powered by **GitHub Actions**, ensuring fresh data is fetched and updated every day.
+
+---
 
 ### Get Started
 
@@ -27,7 +27,11 @@ The automation is powered by **GitHub Actions**, ensuring fresh data is fetched 
 **Dependencies**:
    - Install the required Python libraries from `requirements.txt`.
 
+---
+
 ### Running the Project
+
+---
 
 #### Option 1: On Your Local Machine
 
@@ -67,13 +71,15 @@ The automation is powered by **GitHub Actions**, ensuring fresh data is fetched 
 
 #### Fetching the data with GitHub action:
 
-You can manually run the Github Action `Get Weather from Met Éireann` (optional in case the newerst weather data is needed)
+You can manually run the Github Action `Get Weather from Met Éireann` (optional in case the newest weather data is needed)
 
 1. Open the repository on GitHub and click **"Actions" > "Get Weather from Met Éireann" > "Run workflow"**.
 2. Then open `weather.ipynb`.
 3. Run all cells to analyze the data.
 
 Note: Data updates automatically every 24 hours (20:00 UTC, which can be changed on the git workflow `.yml` file)
+
+---
 
 ## Repository Structure
 
@@ -88,12 +94,16 @@ weather-data-analysis/
 |
 ```
 
+---
+
 ### Project Overview
 
 The notebook processes daily weather data with the following features:
 * Automated daily data collection via GitHub Actions
 * Timestamp-based data organization
 * Comprehensive meteorological parameters analysis
+
+---
 
 ### Data Structure
 
@@ -105,6 +115,8 @@ The dataset includes hourly measurements of:
 * Weather conditions
 * Rainfall
 
+---
+
 ### Technical Components
 
 Data Processing
@@ -114,11 +126,15 @@ Data Processing
 * Categorical: object (weather descriptions, wind directions)
 * Temporal: datetime64 (observation timestamps)
 
+---
+
 ### Automation
 
 * Daily data collection and processing through GitHub Actions
 * Automated timestamp addition
 * Data validation and update procedures
+
+---
 
 ### Data Freshness
 
@@ -128,7 +144,9 @@ The notebook maintains current data through:
 * Data preservation (up to 10 instances, but it can be changed for more on the code)
 * Continuous data validation
 
-Note: The data presevation can be changed to a historical one in case you decide to keep all the files and/or timestamps. It is only necessary to delete this feature on the `weather.sh` script
+Note: The data preservation can be changed to a historical one in case you decide to keep all the files and/or timestamps. It is only necessary to delete this feature on the `weather.sh` script
+
+---
 
 ### Future Enhancements
 
@@ -139,9 +157,12 @@ Note: The data presevation can be changed to a historical one in case you decide
 
 Note: All statistical values in the notebook are dynamically updated daily, reflecting the most recent weather conditions in Athenry.
 
+
+---
+---
+
 ## Author
 
-***
 
 #### About me:
 
