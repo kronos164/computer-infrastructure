@@ -85,7 +85,7 @@ Note: Data updates automatically every 24 hours (20:00 UTC, which can be changed
 ## Repository Structure
 
 ```
-weather-data-analysis/
+computer-infrastructure/
 |
 ├── data/              # Folder for storing downloaded weather data
 ├── weather.sh         # Bash script for data collection
