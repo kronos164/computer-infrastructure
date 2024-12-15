@@ -39,8 +39,8 @@ The automation is powered by **GitHub Actions**, ensuring fresh data is fetched 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/weather-data-analysis.git
-   cd weather-data-analysis
+   git clone https://github.com/kronos164/computer-infrastructure
+   cd computer-infrastructure
    ```
 2. Install dependencies:
    ```bash
