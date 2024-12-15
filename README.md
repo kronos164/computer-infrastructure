@@ -24,6 +24,7 @@ The automation is powered by **GitHub Actions**, ensuring fresh data is fetched 
 **System Requirements**:
    - Python 3.8+
    - Bash Shell
+
 **Dependencies**:
    - Install the required Python libraries from `requirements.txt`.
 
