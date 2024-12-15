@@ -10,14 +10,83 @@ Repository for ATU module assessment
 
 This project features an automated daily weather data analysis for Athenry using a Jupyter notebook. The data is automatically updated through GitHub Actions, ensuring fresh meteorological insights every day.
 
+This repository contains:
+
+- **Bash Script**: Automates daily weather data collection from Met Éireann.
+- **Jupyter Notebook**: Processes and analyzes the collected weather data, providing insights into meteorological trends for Athenry.
+
+The automation is powered by **GitHub Actions**, ensuring fresh data is fetched and updated every day.
+
 ### Get Started
 
-1. Clone the repository
-2. Download necessary requirements
-3. Open the Jupyter notebook
-4. Manually run the Github Action `Get Weather from Met Éireann` (optional in case the newerst weather data is needed)
-5. Run all cells to see the latest weather analysis
-6. Data updates automatically every 24 hours (20:00 UTC, which can be changed on the git workflow `.yml` file)
+### Prerequisites
+
+**System Requirements**:
+   - Python 3.8+
+   - Bash Shell
+**Dependencies**:
+   - Install the required Python libraries from `requirements.txt`.
+
+### Running the Project
+
+#### Option 1: On Your Local Machine
+
+**Using Visual Studio Code and Anaconda:**
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/weather-data-analysis.git
+   cd weather-data-analysis
+   ```
+2. Install dependencies:
+   ```bash
+   conda create --name weather_env python=3.8
+   conda activate weather_env
+   pip install -r requirements.txt
+   ```
+3. Run the Bash script to fetch the most recent weather data (optional):
+   ```bash
+   ./weather.sh
+   ```
+4. Open the Jupyter Notebook:
+   - Launch VS Code.
+   - Open the repository folder.
+   - Start the Jupyter extension and open `weather.ipynb`.
+   - Run all cells to analyze the data.
+
+---
+
+#### Option 2: Using GitHub Codespaces
+
+1. Open the repository on GitHub and click **"Code" > "Codespaces" > "Create Codespace"**.
+2. GitHub Codespaces will automatically set up the environment.
+3. Open `weather.ipynb` in the integrated Jupyter environment.
+4. Run all cells to process and analyze the weather data.
+
+---
+
+#### Fetching the data with GitHub action:
+
+You can manually run the Github Action `Get Weather from Met Éireann` (optional in case the newerst weather data is needed)
+
+1. Open the repository on GitHub and click **"Actions" > "Get Weather from Met Éireann" > "Run workflow"**.
+2. Then open `weather.ipynb`.
+3. Run all cells to analyze the data.
+
+Note: Data updates automatically every 24 hours (20:00 UTC, which can be changed on the git workflow `.yml` file)
+
+## Repository Structure
+
+```
+weather-data-analysis/
+|
+├── data/              # Folder for storing downloaded weather data
+├── weather.sh         # Bash script for data collection
+├── weather.ipynb      # Jupyter notebook for data analysis
+├── requirements.txt   # Python dependencies
+├── .github/workflows/ # GitHub Actions workflow
+|
+```
 
 ### Project Overview
 
