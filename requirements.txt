@@ -2,4 +2,3 @@ pandas
 os
 matplotlib.pyplot
 numpy
-bash (Ubuntu)
